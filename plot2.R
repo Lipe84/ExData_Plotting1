@@ -1,7 +1,7 @@
 # sourcing code to load data
 source("./explo_project1.R")
 
-# As descripted in the forum, it is usefull change language: in my case from italian to english
+# As described in the forum, it is usefull change language: in my case from italian to english
 user_lang <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME", "English")
 
