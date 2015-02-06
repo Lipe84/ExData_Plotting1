@@ -29,4 +29,4 @@ dev.off()
 Sys.setlocale("LC_TIME", user_lang)
 
 # reset standard working directory
-setwd("C:/R")
+setwd(wd)
