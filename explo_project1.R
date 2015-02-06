@@ -1,6 +1,8 @@
 library(lubridate)
 
 # check if new directory already exists and change Working Directory with it
+# store original Working Directory in "wd" variable
+wd <- getwd()
 path <- "./explo_project1"
 if(!file.exists(path)){dir.create(path)}
 setwd("./explo_project1")
@@ -35,4 +37,4 @@ x <- paste(data$Date, data$Time)
 data$Date_Time <- strptime(x, "%d/%m/%Y %H:%M:%S")
 
 # reset standard working directory
-setwd("C:/R")
+setwd(wd)
